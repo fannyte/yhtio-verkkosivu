@@ -1,0 +1,213 @@
+.nav-box {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    background-color: rgba(245, 245, 220, 0.8);
+}
+
+.nav-item {
+    width: 100px;
+    height: 72px;
+    margin: 5px;
+    object-fit: contain;
+}
+
+.nav-link {
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(101, 94, 84);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-link:hover {
+    background-color: beige;
+    color: black;
+}
+
+.home-page {
+    background-image: url(https://images.etlehti.fi/JgyAkR2Sz5GAJ3Sui07TuF8HkKQ=/1200x630/smart/etlehti.fi/s3fs-public/main_media/sienet1.jpg?itok=Ss48BCFN);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home-page-main {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.home-title {
+    color: rgb(52, 30, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0.25em 0.5em;
+    border: 5px solid darkolivegreen;
+}
+
+.home-image {
+    border: 5px solid darkolivegreen;
+}
+
+.home-image-text {
+    color: rgb(52, 30, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0.25em 0.5em;
+}
+
+.products-page {
+    background-image: url(https://images.etlehti.fi/JgyAkR2Sz5GAJ3Sui07TuF8HkKQ=/1200x630/smart/etlehti.fi/s3fs-public/main_media/sienet1.jpg?itok=Ss48BCFN);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.products-main-image-with-text {
+    margin: 1rem auto 2rem;
+    text-align: center;
+}
+
+.products-feature-image {
+    display: block;
+    width: min(80%, 900px);
+    height: auto;
+    margin: 0 auto;
+    border: 5px solid darkolivegreen;
+}
+
+.products-feature-text {
+    color: rgb(52, 30, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0.5rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-card {
+    padding: 1rem;
+    border: 5px solid darkolivegreen;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(52, 30, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.products-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.products-image-text {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.25rem;
+    color: rgb(52, 30, 2);
+}
+
+.product-description {
+    margin: 0 0 0.75rem;
+    font-weight: bold;
+}
+
+.product-details {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-page {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(https://images.etlehti.fi/JgyAkR2Sz5GAJ3Sui07TuF8HkKQ=/1200x630/smart/etlehti.fi/s3fs-public/main_media/sienet1.jpg?itok=Ss48BCFN);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: rgb(52, 30, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.6fr);
+    align-items: start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-info {
+    padding: 1.5rem;
+    border: 4px solid darkolivegreen;
+    background-color: rgba(255, 255, 255, 0.78);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.contact-info h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.5rem;
+}
+
+.contact-info address {
+    margin-bottom: 1rem;
+    font-style: normal;
+}
+
+.contact-info p {
+    margin: 0.75rem 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-map {
+    min-width: 0;
+    overflow: hidden;
+    border: 4px solid darkolivegreen;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media (max-width: 800px) {
+    .contact-layout {
+        grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.2fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+
+    .contact-map iframe {
+        height: 300px;
+    }
+}
